@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/react-bikestore/static/css/main.8852998d.css",
+    "main.js": "/react-bikestore/static/js/main.6efae2a5.js",
+    "static/media/bike.mp4": "/react-bikestore/static/media/bike.3972cab8275a8b7c0b7c.mp4",
+    "static/media/bike1.jfif": "/react-bikestore/static/media/bike1.84610e0dae23358fd669.jfif",
+    "static/media/bike2.jfif": "/react-bikestore/static/media/bike2.c9e476beaf8e9ec85998.jfif",
+    "static/media/waterbottlepromo.jfif": "/react-bikestore/static/media/waterbottlepromo.56f413548180b12f8ab0.jfif",
+    "static/media/signupback.jpg": "/react-bikestore/static/media/signupback.2e7170711eaf98289f88.jpg",
+    "index.html": "/react-bikestore/index.html",
+    "main.8852998d.css.map": "/react-bikestore/static/css/main.8852998d.css.map",
+    "main.6efae2a5.js.map": "/react-bikestore/static/js/main.6efae2a5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8852998d.css",
+    "static/js/main.6efae2a5.js"
+  ]
+}
