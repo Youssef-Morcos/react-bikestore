@@ -1,0 +1,55 @@
+
+.information {
+    display: flex;
+    justify-content: space-around;
+    max-width: 80%;
+    margin: 5rem auto;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 10rem;
+    min-width: 10rem;
+}
+
+.info  {
+    font-size: 2rem;
+}
+
+.info button {
+    min-width: 120px;
+}
+
+.info-icons {
+    font-size: 5.5rem;
+}
+
+
+@media screen and (max-width: 800px) {
+
+    .information {
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        gap: 3rem;
+
+    }
+
+   
+
+    .bikeicon {
+        width: 100%;
+        object-fit: cover;
+    }
+    
+}
+
+@media screen and (max-width:500px) {
+    .information {
+        display: flex;
+        flex-direction: column;
+    }
+    
+}

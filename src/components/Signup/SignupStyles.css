@@ -1,0 +1,74 @@
+.signupdiv {
+
+   
+    width: 100%;
+    height: 90vh;
+    background-color: black;
+
+
+}
+
+.signup-container {
+    width: 75%;
+    height: 100%;
+    margin: auto;
+    position: relative;
+
+}
+
+.signupimg {
+    width: 100%;
+    height: 100%;
+}
+
+.signupimg img {
+    width: 100%;
+    height: 100%;
+}
+
+.signuplayover {
+
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
+    background-color: rgba(201,203, 220, 0.7);
+    z-index: 3;
+
+}
+
+.signuplayover p {
+    color: var(--dark-blue);
+    font-weight: bold;
+}
+
+.signupform input[type=text] {
+    border: transparent;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    color: var(--dark-blue);
+}
+
+.signupform input[type=text]:focus {
+    outline: none;
+}
+
+@media screen and (max-width: 940px) {
+
+    .signupform {
+        width: 90%;
+
+    }
+
+    .signupform input[type=text] {
+        max-width: 275px;
+
+    }
+
+}
