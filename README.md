@@ -1,3 +1,11 @@
+![Sreenshot of the website](/src/assets/screenshot.png)
+
+
+# Dave's bike store
+## Description
+It is a website for a bike store made with react, react packages and css.
+
+[The website GitHub page](https://youssef-morcos.github.io/react-bikestore/ "Dave's bikes Homepage")
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
