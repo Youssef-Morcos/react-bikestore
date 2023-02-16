@@ -122,6 +122,7 @@
 .bike-promotion, .accessories-promotion {
     position: absolute;
     top: -30.5px;
+    padding-top: 80px;
     background-color: #000000;
     display: flex;
     justify-content: center;

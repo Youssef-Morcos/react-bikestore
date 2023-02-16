@@ -13,13 +13,14 @@ function BikesMenu (props) {
     const elementHeight = useRef();
 
     useEffect( ()=> {
-        if (elementWidth.current){
+        if (elementWidth.current && elementHeight.current){
         let widthValue = elementWidth.current;
         setRefwidth(widthValue.offsetWidth);
-        }
-        if(elementHeight.current){
+        console.log(widthValue.offsetWidth);
+       
         let heightValue= elementHeight.current;
         setRefHeight(heightValue.offsetHeight);
+        console.log(heightValue.offsetHeight);
     }
         
     },[]);
@@ -44,7 +45,9 @@ function BikesMenu (props) {
             </div>
 
         </div>
-            <div className={props.hoverBikes ? "sub-bikes hover-bikes" : "sub-bikes"} ref={elementHeight}>
+            <div className={props.hoverBikes ? "sub-bikes hover-bikes" : "sub-bikes"} >
+
+                <div className="cat-container" ref={elementHeight}>
 
                 <div className="categories road-bikes">
                     <h2>Road Bikes</h2>
@@ -83,6 +86,8 @@ function BikesMenu (props) {
                         <li>Active</li>
 
                     </ul>
+                </div>
+
                 </div>
 
 

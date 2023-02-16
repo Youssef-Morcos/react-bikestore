@@ -43,35 +43,38 @@ function AccessoriesMenu (props){
             </div>
 
 
-            <div className={props.hoverAccessories ? "sub-accessories hover-accessories" : "sub-accessories"} ref={elementHeight}>
+            <div className={props.hoverAccessories ? "sub-accessories hover-accessories" : "sub-accessories"} >
 
-                <div className="categories water-bottles">
-                    <h2>Water Bottles</h2>
-                    <ul>
-                        <li>Water Bottles</li>
-                        <li>Bottle cages</li>
-                    </ul>
-                    
-                </div>
-                <div className="categories"rider-gears>
-                    <h2>Rider Gears</h2>
-                    <ul>
-                        <li>Helmets</li>
-                        <li>Cycling Glasses</li>
-                        <li>Protective Gear</li>
-                    </ul>
+                <div className="cat-accessoriescontainer" ref={elementHeight}>
 
-                    
-                </div>
-                <div className="categories lights-electronics">
-                    <h2>Lights & Electronics</h2>
-                    <ul>
-                        <li>Bikes Lights</li>
-                        <li>GPS </li>
-                        <li>Sensors</li>
-                        <li>Electronic accessories</li>
-                    </ul>
-                </div>
+                    <div className="categories water-bottles">
+                        <h2>Water Bottles</h2>
+                        <ul>
+                            <li>Water Bottles</li>
+                            <li>Bottle cages</li>
+                        </ul>
+                        
+                    </div>
+                    <div className="categories"rider-gears>
+                        <h2>Rider Gears</h2>
+                        <ul>
+                            <li>Helmets</li>
+                            <li>Cycling Glasses</li>
+                            <li>Protective Gear</li>
+                        </ul>
+
+                        
+                    </div>
+                    <div className="categories lights-electronics">
+                        <h2>Lights & Electronics</h2>
+                        <ul>
+                            <li>Bikes Lights</li>
+                            <li>GPS </li>
+                            <li>Sensors</li>
+                            <li>Electronic accessories</li>
+                        </ul>
+                    </div>
+                    </div>
 
 
             </div>
