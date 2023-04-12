@@ -23,7 +23,7 @@ function BikesMenu (props) {
         console.log(heightValue.offsetHeight);
     }
         
-    },[]);
+    },[refwidth, refHeight]);
 
 
 

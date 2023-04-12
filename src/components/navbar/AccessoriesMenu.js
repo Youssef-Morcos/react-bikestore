@@ -19,7 +19,7 @@ function AccessoriesMenu (props){
         setRefHeight(heightValue.offsetHeight);
     }
         
-    },[]);
+    },[refwidth, refHeight]);
 
 
     return (
