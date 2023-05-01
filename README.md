@@ -3,8 +3,9 @@
 
 # Dave's bike store
 ## Description
+PLEASE refresh the page after loading to see the navigation bar functioning as intended.\
 It is a website for a bike store made with react, react packages and css.
-PLEASE refresh the page after loading to see the navigation bar functioning as intended. 
+ 
 
 [The website GitHub page](https://youssef-morcos.github.io/react-bikestore/ "Dave's bikes Homepage")
 # Getting Started with Create React App
