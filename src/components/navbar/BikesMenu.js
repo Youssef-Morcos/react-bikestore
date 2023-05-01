@@ -13,15 +13,12 @@ function BikesMenu (props) {
     const elementHeight = useRef();
 
     useEffect( ()=> {
-        if (elementWidth.current && elementHeight.current){
+       
         let widthValue = elementWidth.current;
         setRefwidth(widthValue.offsetWidth);
-        console.log(widthValue.offsetWidth);
        
         let heightValue= elementHeight.current;
         setRefHeight(heightValue.offsetHeight);
-        console.log(heightValue.offsetHeight);
-    }
         
     },[refwidth, refHeight]);
 

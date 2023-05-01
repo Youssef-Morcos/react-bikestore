@@ -10,14 +10,11 @@ function AccessoriesMenu (props){
     const elementHeight = useRef();
 
     useEffect( ()=> {
-        if (elementWidth.current){
-        let widthValue = elementWidth.current;
-        setRefwidth(widthValue.offsetWidth);
-            }
-        if(elementHeight.current){
-        let heightValue= elementHeight.current;
-        setRefHeight(heightValue.offsetHeight);
-    }
+    let widthValue = elementWidth.current;
+    setRefwidth(widthValue.offsetWidth);
+                
+    let heightValue= elementHeight.current;
+    setRefHeight(heightValue.offsetHeight);
         
     },[refwidth, refHeight]);
 
