@@ -4,7 +4,6 @@
 # Dave's bike store
 ## Description
 It is a one page website with reponsive desing for a bike store made with react, react packages and css.
- 
 
 [The website GitHub page](https://youssef-morcos.github.io/react-bikestore/ "Dave's bikes Homepage")
 # Getting Started with Create React App
