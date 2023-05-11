@@ -1,19 +1,38 @@
-import React from "react";
+import React, {useRef, useEffect, useState} from "react";
 import Bike2 from "../../assets/bike2.jfif";
 
 
 
 function BikesMenu (props) {
 
+    const [ refwidth,setRefwidth] = useState();
+    const [refHeight, setRefHeight] = useState();
+
+
+    const elementWidth = useRef();
+    const elementHeight = useRef();
+
+    useEffect( ()=> {
+       
+        let widthValue = elementWidth.current;
+        setRefwidth(widthValue.offsetWidth);
+       
+        let heightValue= elementHeight.current;
+        setRefHeight(heightValue.offsetHeight);
+        
+    },[refwidth, refHeight]);
+
+
+
 
     return (
-        <div className="bikes" onMouseEnter={props.handleHoverBikes} onMouseLeave={props.leaveHoverBikes} >
+        <div className="bikes" onMouseEnter={props.handleHoverBikes} onMouseLeave={props.leaveHoverBikes} ref={elementWidth}>
                 
         <div className="menu-bikes menu-list bike-promotion-container" >
             <div id="bikediv" >
             Bikes
             </div>
-            <div className="bike-promotion" style={props.hoverBikes ? {right: 55, height: 537,  transition: "0.5s"}: {right: "-100vw"}}>
+            <div className="bike-promotion" style={props.hoverBikes ? {right: (refwidth - 16), height: refHeight,  transition: "0.5s"}: {right: "-100vw"}}>
             <div className="bikenavpromo">
                     <div className="bikeimagepromo">
                         <img src={Bike2} alt="/"/>
@@ -25,7 +44,7 @@ function BikesMenu (props) {
         </div>
             <div className={props.hoverBikes ? "sub-bikes hover-bikes" : "sub-bikes"} >
 
-                <div className="cat-container" >
+                <div className="cat-container" ref={elementHeight}>
 
                 <div className="categories road-bikes">
                     <h2>Road Bikes</h2>

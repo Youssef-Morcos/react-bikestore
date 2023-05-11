@@ -1,13 +1,26 @@
-import React from "react";
+import React, {useState, useRef, useEffect} from "react";
 import Waterbottlepromo from '../../assets/waterbottlepromo.jfif';
 
 function AccessoriesMenu (props){
 
-   
+    const [ refwidth,setRefwidth] = useState();
+    const [refHeight, setRefHeight] = useState();
+
+    const elementWidth = useRef();
+    const elementHeight = useRef();
+
+    useEffect( ()=> {
+    let widthValue = elementWidth.current;
+    setRefwidth(widthValue.offsetWidth);
+                
+    let heightValue= elementHeight.current;
+    setRefHeight(heightValue.offsetHeight);
+        
+    },[refwidth, refHeight]);
 
 
     return (
-        <div className="accessories" onMouseEnter={props.handleHoverAccessories} onMouseLeave={props.leaveHoverAccessories} >
+        <div className="accessories" onMouseEnter={props.handleHoverAccessories} onMouseLeave={props.leaveHoverAccessories} ref={elementWidth}>
                 
         <div className="menu-accessories menu-list accessories-promotion-container" >
 
@@ -15,7 +28,7 @@ function AccessoriesMenu (props){
             Accessories
             </div>
 
-            <div className="accessories-promotion" style={props.hoverAccessories ? {right: 103, height: 359,  transition: "0.5s"}: {right: "-100vw"}}>
+            <div className="accessories-promotion" style={props.hoverAccessories ? {right: (refwidth - 16), height: refHeight,  transition: "0.5s"}: {right: "-100vw"}}>
             <div className="accessoriesnavpromo">
                     <div className="accessoriesimagepromo">
                         <img src={Waterbottlepromo} alt="/"/>
@@ -29,7 +42,7 @@ function AccessoriesMenu (props){
 
             <div className={props.hoverAccessories ? "sub-accessories hover-accessories" : "sub-accessories"} >
 
-                <div className="cat-accessoriescontainer" >
+                <div className="cat-accessoriescontainer" ref={elementHeight}>
 
                     <div className="categories water-bottles">
                         <h2>Water Bottles</h2>
