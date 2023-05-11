@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/react-bikestore/static/css/main.82be91c9.css",
-    "main.js": "/react-bikestore/static/js/main.0b08722b.js",
+    "main.js": "/react-bikestore/static/js/main.1d4d5245.js",
     "static/media/bike.mp4": "/react-bikestore/static/media/bike.3972cab8275a8b7c0b7c.mp4",
     "static/media/bike1.jfif": "/react-bikestore/static/media/bike1.84610e0dae23358fd669.jfif",
     "static/media/bike2.jfif": "/react-bikestore/static/media/bike2.c9e476beaf8e9ec85998.jfif",
@@ -9,10 +9,10 @@
     "static/media/signupback.jpg": "/react-bikestore/static/media/signupback.2e7170711eaf98289f88.jpg",
     "index.html": "/react-bikestore/index.html",
     "main.82be91c9.css.map": "/react-bikestore/static/css/main.82be91c9.css.map",
-    "main.0b08722b.js.map": "/react-bikestore/static/js/main.0b08722b.js.map"
+    "main.1d4d5245.js.map": "/react-bikestore/static/js/main.1d4d5245.js.map"
   },
   "entrypoints": [
     "static/css/main.82be91c9.css",
-    "static/js/main.0b08722b.js"
+    "static/js/main.1d4d5245.js"
   ]
 }
